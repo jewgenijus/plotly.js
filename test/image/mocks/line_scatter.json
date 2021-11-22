@@ -8,42 +8,6 @@
         4
       ],
       "y": [
-        10,
-        15,
-        13,
-        17
-      ],
-      "mode": "markers",
-      "type": "scatter",
-      "marker": {
-        "opacity": 0.5
-      }
-    },
-    {
-      "x": [
-        2,
-        3,
-        4,
-        5
-      ],
-      "y": [
-        16,
-        5,
-        11,
-        9
-      ],
-      "mode": "lines",
-      "type": "scatter",
-      "opacity": 0.5
-    },
-    {
-      "x": [
-        1,
-        2,
-        3,
-        4
-      ],
-      "y": [
         12,
         9,
         15,
@@ -53,15 +17,18 @@
       "type": "scatter",
       "opacity": 0.707,
       "marker": {
+        "color": ["blue", "yellow", "red", "green"],
+        "line": {
+          "color": ["yellow", "yellow", "red", "green"],
+          "width": 5
+        },
         "opacity": 0.707
+      },
+      "_line": {
+        "color": ["yellow", "yellow", "red", "green"],
+        "_dash": "dashdot",
+        "_shape": "hv"
       }
-    },
-    {
-      "x": [1, 2, 3],
-      "y": [1, 2, 3],
-      "opacity": 0.2,
-      "line": { "width": 10, "color": "red"},
-      "marker": { "size": 20, "color": "blue"}
     }
   ]
 }

@@ -2,7 +2,7 @@
   "data": [
     {
       "type": "scattermapbox",
-      "mode": "markers+lines",
+      "mode": "lines",
       "lon": [
         10,
         20,
@@ -15,11 +15,15 @@
       ],
       "marker": {
         "size": 20
+      },
+      "line": {
+        "width": 30,
+        "opacity": 0.1
       }
     },
     {
       "type": "scattermapbox",
-      "mode": "markers+lines",
+      "mode": "lines",
       "lon": [
         -75,
         -120,

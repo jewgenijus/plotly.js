@@ -612,7 +612,7 @@ drawing.pointStyle = function(s, trace, gd) {
     });
 };
 
-drawing.singlePointStyle = function(d, sel, trace, fns, gd) {
+drawing.singlePointStyle = function(d, sel, trace, fns, gd, lines_sel) {
     var marker = trace.marker;
     var markerLine = marker.line;
 
@@ -750,7 +750,7 @@ drawing.singlePointStyle = function(d, sel, trace, fns, gd) {
         }
 
         if(lineWidth) {
-            Color.stroke(sel, lineColor);
+            Color.stroke(lines_sel, lineColor);
         }
     }
 };

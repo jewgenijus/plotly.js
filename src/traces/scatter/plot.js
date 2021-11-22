@@ -433,7 +433,7 @@ function plotOne(gd, idx, plotinfo, cdscatter, cdscatterAll, element, transition
             hasNode = Drawing.translatePoint(d, sel, xa, ya);
 
             if(hasNode) {
-                Drawing.singlePointStyle(d, sel, trace, styleFns, gd);
+                Drawing.singlePointStyle(d, sel, trace, styleFns, gd, lineJoin);
 
                 if(plotinfo.layerClipId) {
                     Drawing.hideOutsideRangePoint(d, sel, xa, ya, trace.xcalendar, trace.ycalendar);

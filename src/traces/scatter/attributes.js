@@ -252,13 +252,13 @@ module.exports = {
         keys: constants.eventDataKeys
     }),
 
-    line: {
-        color: {
-            valType: 'color',
-            editType: 'style',
-            anim: true,
-            description: 'Sets the line color.'
-        },
+    line: extendFlat({
+        // color: {
+        //     valType: 'color',
+        //     editType: 'style',
+        //     anim: true,
+        //     description: 'Sets the line color.'
+        // },
         width: {
             valType: 'number',
             min: 0,
@@ -303,6 +303,8 @@ module.exports = {
         },
         editType: 'plot'
     },
+        colorScaleAttrs('line', {anim: true})
+    ),
 
     connectgaps: {
         valType: 'boolean',
